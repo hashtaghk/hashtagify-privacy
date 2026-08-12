@@ -1,0 +1,423 @@
+<title>HashtagiFy — Privacy Policy</title>
+<style>
+  :root {
+    --ground: #FFF9FA;
+    --surface: #FFFFFF;
+    --surface-2: #FDEFF3;
+    --ink: #1C1216;
+    --muted: #6E5B62;
+    --rule: #EFDFE4;
+    --accent: #BC0051;
+    --accent-ink: #8E003D;
+
+    --font-display: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
+
+    --measure: 68ch;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #141011;
+      --surface: #1C1618;
+      --surface-2: #241A1E;
+      --ink: #F3EAED;
+      --muted: #B3A1A7;
+      --rule: #33272B;
+      --accent: #FFB1C0;
+      --accent-ink: #FFC6D2;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground: #141011;
+    --surface: #1C1618;
+    --surface-2: #241A1E;
+    --ink: #F3EAED;
+    --muted: #B3A1A7;
+    --rule: #33272B;
+    --accent: #FFB1C0;
+    --accent-ink: #FFC6D2;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--font-body);
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    padding: 0 24px 96px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  header.masthead {
+    padding-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 32px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  h1 {
+    font-family: var(--font-display);
+    font-size: clamp(34px, 6vw, 48px);
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .dateline {
+    color: var(--muted);
+    font-size: 15px;
+    margin: 0;
+  }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 28px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .summary h2 {
+    font-family: var(--font-display);
+    font-size: 21px;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .summary ul {
+    margin: 0;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  nav.toc {
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+  }
+
+  nav.toc ol {
+    margin: 0;
+    padding-left: 18px;
+    columns: 2;
+    column-gap: 32px;
+    font-size: 15px;
+  }
+
+  nav.toc li { margin-bottom: 6px; break-inside: avoid; }
+
+  section { display: flex; flex-direction: column; gap: 14px; }
+
+  h2.clause {
+    font-family: var(--font-display);
+    font-size: 25px;
+    font-weight: 600;
+    margin: 24px 0 0;
+    line-height: 1.25;
+    text-wrap: balance;
+    display: flex;
+    gap: 14px;
+    align-items: baseline;
+  }
+
+  h2.clause .num {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--accent);
+    font-weight: 400;
+    flex: none;
+  }
+
+  h3 {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 14px 0 0;
+    letter-spacing: 0.01em;
+  }
+
+  p { margin: 0; }
+  ul, ol { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+
+  a { color: var(--accent-ink); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+  code {
+    font-family: var(--font-mono);
+    font-size: 0.86em;
+    background: var(--surface-2);
+    padding: 2px 6px;
+    border-radius: 5px;
+    word-break: break-word;
+  }
+
+  .table-scroll { overflow-x: auto; border: 1px solid var(--rule); border-radius: 12px; }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 15px;
+    min-width: 560px;
+    background: var(--surface);
+  }
+
+  th, td {
+    text-align: left;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  th {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 700;
+  }
+
+  tr:last-child td { border-bottom: none; }
+
+  .callout {
+    background: var(--surface-2);
+    border-radius: 12px;
+    padding: 20px 24px;
+    font-size: 15.5px;
+  }
+
+  footer {
+    border-top: 1px solid var(--rule);
+    padding-top: 28px;
+    color: var(--muted);
+    font-size: 14.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  @media (max-width: 620px) {
+    nav.toc ol { columns: 1; }
+    body { font-size: 16px; }
+  }
+</style>
+
+<div class="wrap">
+
+  <header class="masthead">
+    <span class="eyebrow">HashtagiFy for Android</span>
+    <h1>Privacy Policy</h1>
+    <p class="dateline">Last updated 12 August 2026 · Applies to app version 6.6 and later</p>
+  </header>
+
+  <div class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>There is no account and no sign-in. We never ask for your name, email or phone number.</li>
+      <li>What you type — and any photo you attach — is sent to Google's Gemini service to write your captions. It is not used to identify you.</li>
+      <li>Your generated posts are saved <strong>on your device</strong>, not on a server we control.</li>
+      <li>The app is funded by ads, so Google receives your device's advertising ID. Where the law requires it, you are asked first and can change your answer at any time in Settings.</li>
+      <li>Uninstalling the app removes everything it stored on your device.</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Contents">
+    <ol>
+      <li><a href="#who">Who this policy covers</a></li>
+      <li><a href="#collect">What the app collects</a></li>
+      <li><a href="#never">What it never collects</a></li>
+      <li><a href="#sharing">Who receives data</a></li>
+      <li><a href="#permissions">Permissions</a></li>
+      <li><a href="#legal">Legal bases (UK &amp; EEA)</a></li>
+      <li><a href="#choices">Your choices and rights</a></li>
+      <li><a href="#retention">Retention and deletion</a></li>
+      <li><a href="#backup">Device backups</a></li>
+      <li><a href="#children">Children</a></li>
+      <li><a href="#transfers">International transfers</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#changes">Changes</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ol>
+  </nav>
+
+  <section id="who">
+    <h2 class="clause"><span class="num">01</span>Who this policy covers</h2>
+    <p>This policy explains how the Android app <strong>HashtagiFy — Hashtag Generator</strong> (package <code>ai.socialpro.boost.posts.hashtags.craft.hwzatech</code>) handles information. It applies to the app only, not to the social networks you post to afterwards.</p>
+    <p>The app is published by <strong>[DEVELOPER OR COMPANY LEGAL NAME]</strong>, the data controller for the purposes of UK and EU data protection law. Contact details are in section 14.</p>
+  </section>
+
+  <section id="collect">
+    <h2 class="clause"><span class="num">02</span>What the app collects</h2>
+
+    <h3>The topic you type, and any photo you attach</h3>
+    <p>When you press Generate, the text you wrote and — if you attached one — the photo you chose are sent to Google's Gemini model through Firebase AI Logic, which returns the captions and hashtags. This is the core function of the app and it cannot work without sending that content.</p>
+    <p>Two things are worth being precise about. The photo is chosen through Android's system photo picker, which grants the app access to that one image and nothing else in your gallery. And your photo is <strong>not</strong> stored in your history — a saved post keeps the caption text and the app's own icon, not the picture you used.</p>
+
+    <h3>What stays on your device</h3>
+    <p>Generated posts, the platform they were written for, anything you pin, your writing preferences (tone, role, audience, caption length, hashtag count) and your credit balance are stored locally in the app's own storage. None of it is uploaded to a server operated by us — we do not run one.</p>
+
+    <h3>Advertising</h3>
+    <p>The app is free and funded by ads served by Google AdMob, including rewarded video ads you can watch to earn credits. To do that, Google receives your device's advertising ID, coarse device and network information, and how you interacted with an ad. Where privacy law requires consent, a Google-certified consent form is shown before any ad is requested.</p>
+
+    <h3>Analytics and crash reports</h3>
+    <p>Firebase Analytics records anonymous usage — app opens, screens viewed, device model, language and country — so we can tell which features are worth keeping. Firebase Crashlytics records a stack trace, device state and app version when the app crashes, so it can be fixed. Neither is used to build a profile of you as a person.</p>
+
+    <h3>Abuse prevention</h3>
+    <p>Firebase App Check with Play Integrity issues a token confirming the request came from a genuine, unmodified copy of the app. This exists to stop a repackaged copy from spending the AI quota that pays for your free generations.</p>
+
+    <h3>Voice input</h3>
+    <p>The <em>Speak</em> button hands over to your device's own speech recognition service. The app has no microphone permission and never records or receives audio — only the text that comes back, which you can edit before you use it.</p>
+  </section>
+
+  <section id="never">
+    <h2 class="clause"><span class="num">03</span>What it never collects</h2>
+    <ul>
+      <li>No account, sign-in, name, email address or phone number.</li>
+      <li>No contacts, calendar, call logs or messages.</li>
+      <li>No location. The app requests no location permission of any kind.</li>
+      <li>No microphone or camera access.</li>
+      <li>No scanning of your photo library — only the single image you pick.</li>
+      <li>No payment details. There are no in-app purchases.</li>
+    </ul>
+  </section>
+
+  <section id="sharing">
+    <h2 class="clause"><span class="num">04</span>Who receives data</h2>
+    <p>We do not sell your data and we do not share it with anyone for their own marketing. Data reaches these processors only for the purposes described above:</p>
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr><th scope="col">Recipient</th><th scope="col">What it receives</th><th scope="col">Why</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google — Firebase AI Logic (Gemini)</td>
+            <td>Your topic text and any attached photo</td>
+            <td>To write the captions and hashtags you asked for</td>
+          </tr>
+          <tr>
+            <td>Google — AdMob</td>
+            <td>Advertising ID, device and network data, ad interactions, consent status</td>
+            <td>To serve ads and rewarded videos that fund the app</td>
+          </tr>
+          <tr>
+            <td>Google — Firebase Analytics</td>
+            <td>Anonymous app usage and device characteristics</td>
+            <td>To understand which features are used</td>
+          </tr>
+          <tr>
+            <td>Google — Firebase Crashlytics</td>
+            <td>Crash traces, device state, app version</td>
+            <td>To diagnose and fix crashes</td>
+          </tr>
+          <tr>
+            <td>Google — App Check &amp; Play Integrity</td>
+            <td>An attestation token for the app instance</td>
+            <td>To block tampered copies from abusing the service</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Google's handling of this data is governed by the <a href="https://policies.google.com/privacy" rel="noopener noreferrer" target="_blank">Google Privacy Policy</a>. Ad personalisation can be reviewed at <a href="https://myadcenter.google.com" rel="noopener noreferrer" target="_blank">My Ad Center</a>.</p>
+  </section>
+
+  <section id="permissions">
+    <h2 class="clause"><span class="num">05</span>Permissions the app requests</h2>
+    <ul>
+      <li><code>INTERNET</code> — to reach the AI service and load ads.</li>
+      <li><code>ACCESS_NETWORK_STATE</code> — to tell you that you are offline instead of failing silently mid-generation.</li>
+      <li><code>com.google.android.gms.permission.AD_ID</code> — to read the advertising ID for ad serving.</li>
+    </ul>
+    <p>That is the complete list. There is no storage, location, camera, microphone or contacts permission.</p>
+  </section>
+
+  <section id="legal">
+    <h2 class="clause"><span class="num">06</span>Legal bases (UK &amp; EEA)</h2>
+    <ul>
+      <li><strong>Performance of a contract</strong> — sending your topic and photo to the AI service, because that is the service you asked the app to perform.</li>
+      <li><strong>Consent</strong> — personalised advertising and, where required, analytics. Given through the consent form and withdrawable at any time (section 7).</li>
+      <li><strong>Legitimate interests</strong> — crash reporting, abuse prevention and non-personalised advertising, so the app can stay working, stay free and stay secure.</li>
+    </ul>
+  </section>
+
+  <section id="choices">
+    <h2 class="clause"><span class="num">07</span>Your choices and rights</h2>
+    <ul>
+      <li><strong>Change your ad consent.</strong> Where a consent form applies to you, Settings contains a privacy options entry that reopens it so you can change your answer.</li>
+      <li><strong>Reset or delete your advertising ID.</strong> Android Settings › Privacy › Ads lets you reset the identifier or delete it entirely, which stops personalised advertising at the device level.</li>
+      <li><strong>Delete individual posts.</strong> Each entry in History has a delete control.</li>
+      <li><strong>Delete everything.</strong> Uninstalling the app, or clearing its storage from Android Settings, removes all locally stored posts, preferences and credits. This cannot be undone.</li>
+      <li><strong>Statutory rights.</strong> Depending on where you live, you may have the right to access, correct, delete, port or restrict processing of your personal data, to object to it, and to complain to your data protection authority. Write to us using section 14 and we will respond within the period the law allows.</li>
+    </ul>
+    <div class="callout">Because the app holds no account, we usually cannot connect a request to any stored record — there is nothing on our side that identifies you. For data held by Google as a processor, use the Google links in section 4.</div>
+  </section>
+
+  <section id="retention">
+    <h2 class="clause"><span class="num">08</span>Retention and deletion</h2>
+    <p>Posts, preferences and credits stay on your device until you delete them or uninstall the app; we impose no expiry and hold no copy. Content sent to the AI service is retained by Google under its own terms for that service. Advertising, analytics and crash data are retained by Google under the retention periods set out in its documentation.</p>
+  </section>
+
+  <section id="backup">
+    <h2 class="clause"><span class="num">09</span>Device backups</h2>
+    <p>The app participates in Android's standard backup system. If you have device backup switched on, the app's local data — including your saved posts — may be copied to your own Google account as part of your device backup, and restored when you set up a new device. That backup belongs to you and is governed by Google's terms. Turning off backup for the app in Android Settings prevents it.</p>
+  </section>
+
+  <section id="children">
+    <h2 class="clause"><span class="num">10</span>Children</h2>
+    <p>HashtagiFy is a general-audience tool for people who post on social media. It is not directed at children, and it is not designed or marketed for use by anyone under 13 (or the equivalent minimum age where you live). We do not knowingly collect personal data from children. If you believe a child has used the app in a way that provided personal data, contact us and we will act on it.</p>
+  </section>
+
+  <section id="transfers">
+    <h2 class="clause"><span class="num">11</span>International transfers</h2>
+    <p>The Google services above process data on infrastructure located in several countries, which may be outside your own. Where data leaves the UK or EEA, Google applies the safeguards described in its privacy documentation, including the European Commission's standard contractual clauses.</p>
+  </section>
+
+  <section id="security">
+    <h2 class="clause"><span class="num">12</span>Security</h2>
+    <p>Traffic between the app and Google's services uses encrypted connections. Data stored on your device sits in the app's private storage area, which other apps cannot read on a normal, non-rooted device. No system is perfectly secure, and we cannot guarantee absolute security — but the app holds no account credentials and no payment details, so there is little of value to lose.</p>
+  </section>
+
+  <section id="changes">
+    <h2 class="clause"><span class="num">13</span>Changes to this policy</h2>
+    <p>If this policy changes materially — for example if the app starts collecting something new — the date at the top of this page is updated and the revised version is published here before the change takes effect in a released version of the app.</p>
+  </section>
+
+  <section id="contact">
+    <h2 class="clause"><span class="num">14</span>Contact</h2>
+    <p>Questions, requests about your data, or anything in this policy that does not match what you see in the app:</p>
+    <p><strong>[DEVELOPER OR COMPANY LEGAL NAME]</strong><br>
+    Email: <a href="mailto:kmn.majeed@gmail.com">kmn.majeed@gmail.com</a></p>
+    <p>If you are in the UK you may complain to the Information Commissioner's Office; in the EEA, to your national supervisory authority.</p>
+  </section>
+
+  <footer>
+    <p>HashtagiFy — Hashtag Generator · <code>ai.socialpro.boost.posts.hashtags.craft.hwzatech</code></p>
+    <p>This document describes the app's behaviour as of version 6.6.</p>
+  </footer>
+
+</div>
